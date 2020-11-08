@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6, figure {
 */
 
 .fh5co-cover {
-  height: 900px;
+  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -148,20 +148,20 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover {
-    height: 950px;
+    height: 100%;
   }
 }
 .fh5co-cover .display-t,
 .fh5co-cover .display-tc {
-  height: 900px;
+  height: 100%;
   display: table;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 70px;
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover .display-t,
   .fh5co-cover .display-tc {
-    height: 950px;
+    height: 100%;
   }
 }
 

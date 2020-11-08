@@ -14,7 +14,7 @@
 	Facebook: 		https://www.facebook.com/fh5co
 
 	//////////////////////////////////////////////////////
-	 --><!-- Facebook and Twitter integration --><meta property="og:title" content="JOY"/><meta property="og:image" content=""/><meta property="og:url" content="joy.qilip.io"/><meta property="og:site_name" content="JOY for Call of Duty"/><meta property="og:description" content="qilip 전역일 카운터"/><meta name="twitter:title" content="" /><meta name="twitter:image" content="" /><meta name="twitter:url" content="" /><meta name="twitter:card" content="" />
+	 --><!-- Facebook and Twitter integration --><meta property="og:title" content="JOY"/><meta property="og:image" content="images/ogimage.png"/><meta property="og:url" content="joy.qilip.io"/><meta property="og:site_name" content="JOY for Call of Duty"/><meta property="og:description" content="qilip 전역일 카운터"/><meta name="twitter:title" content="" /><meta name="twitter:image" content="images/ogimage.png" /><meta name="twitter:url" content="" /><meta name="twitter:card" content="" />
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700" rel="stylesheet" type="text/css" /><!-- Animate.css -->
 	<link href="css/animate.css" rel="stylesheet" /><!-- Icomoon Icon Fonts-->
 	<link href="css/icomoon.css" rel="stylesheet" /><!-- Bootstrap  -->
@@ -23,16 +23,36 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
     <script>
-      //Press X for pay Respect
+      //Press X for pay JOY
       window.onkeydown = function(e){
         if(e.keyCode == 88){
-          console.log("asdf")
           location.href = "helpme"
         }
       };
+      
+      //Main Text
+      var textAr = new Array();
+      textAr[0] = "살려줘";
+      textAr[1] = "(╯°□°）╯︵ ┻━┻";
+      textAr[2] = "¯\_(ツ)_/¯";
+      textAr[3] = "ㅋㅋㅋㅋㅋ";
+      textAr[4] = "곤운";
+      textAr[5] = "제설중";
+      textAr[6] = "삽질중";
+      textAr[7] = "구르는중";
+      textAr[8] = "나가게해줘";
+      textAr[9] = "메이플하고싶어";
+      textAr[10] = "롤하고싶어";
+      textAr[11] = "검은사막할래";
+      textAr[12] = "편지써줄래?";
+      function showText(){
+        var textNum = Math.round(Math.random()*12);
+        var textObj = document.getElementById("main-text");
+        textObj.innerHTML = textAr[textNum];
+      }
     </script>
 </head>
-<body>
+<body onload="showText()">
 <div class="fh5co-loader"></div>
 
 <div id="page">
@@ -54,7 +74,7 @@
 <div class="col-md-8 col-md-offset-2 text-center">
 <div class="display-t">
 <div class="display-tc animate-box" data-animate-effect="fadeIn">
-<h1>살려줘</h1>
+<h1 id="main-text"></h1>
 
 <h2>qilip의 전역까지</h2>
 
@@ -63,7 +83,29 @@
 <div class="row">
 <h2>만큼 남았습니다.</h2>
 <a href="helpme"><h2>Press X for Pay JOY</h2></a>
+<br>
+<br>
+<br>
+<br>
 </div>
+<h1 style="font-size:40px;">📧인편쓰기📧</h1>
+<h2>1. 공군교육사령부 홈페이지에 접속합니다.<br>안되면 공군 홈페이지에 접속해 하단 인터넷편지 버튼을 누릅니다.<br>↓아래 버튼 누르면 바로가기 가능↓</h2>
+<button class="btn btn-primary" onclick = "location.href = 'http://atc.airforce.mil.kr:8081/user/indexSub.action?codyMenuSeq=147914674&siteId=atc&menuUIType=sub'">공군교육사령부</button>
+<button class="btn btn-primary" onclick = "location.href = 'https://rokaf.airforce.mil.kr/airforce/index.do'">공군 홈페이지</button>
+<h2>2. 11월 23일(3주차 월요일) ~ 12월 9일(수료주 수요일)까지는 '기본군사훈련단',<br>12월 10일부터 연말(특기학교 수료일)까지는 '정보통신학교' 클릭<br>만약 둘다 안나오면 왼쪽 메뉴에서 잘 찾아봐요</h2>
+<h2>3. 생년월일은 카톡 프로필 확인!</h2>
+<h2>4. 인편 많이좀 써주세요<br>↓인편 내용 추천↓</h2>
+<div style="color:white; font-size:20px;">
+  <li>형식적인 안부 편지</li>
+  <li>일상, 수업 내용 등</li>
+  <li>백준, 코포 등 PS 문제 재밌는거</li>
+  <li>재밌는 문제류들</li>
+  <li>자료구조, 머신러닝, 프로그래밍, 알고리즘 자료</li>
+  <li>IT 관련 새 소식, 제품 발표회 소식</li>
+  <li>메이플, 롤, 검은사막 패치 소식(*URL 보내면 때리러감)</li>
+  <li>기타 등등 아무거나</li>
+</div>
+<h2>으아악</h2>
 </div>
 </div>
 </div>
